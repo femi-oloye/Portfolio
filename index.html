@@ -3,50 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Oluwafemi Oloye</title>
+  <title>Oloye Oluwafemi | Prompt Engineering / AI & MLOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <nav>
-    <h1>My Portfolio</h1>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <section class="projects">
-    <h2>Projects</h2>
+  <header>
+    <nav>
+      <h1>Oluwafemi Oloye</h1>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="project-card">
-      <img src="placeholder.png" alt="AI Insight App Screenshot">
-      <div class="project-info">
-        <h3>Customer Chat Insight Generator</h3>
-        <p>AI-powered Streamlit app that extracts customer sentiment and insights from messages. Built with GPT and sentiment models.</p>
-        <a href="#" class="cta">GitHub Repo</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="placeholder.png" alt="Titanic API Screenshot">
-      <div class="project-info">
-        <h3>MLOps Titanic Model API</h3>
-        <p>End-to-end MLOps API for predicting survival using logistic regression and Docker. Includes monitoring & logging.</p>
-        <a href="#" class="cta">GitHub Repo</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="placeholder.png" alt="Telecom Dashboard Screenshot">
-      <div class="project-info">
-        <h3>Telecom KPI Tracker</h3>
-        <p>Streamlit dashboard built with SQL and Python to track network KPIs and customer satisfaction.</p>
-        <a href="#" class="cta">GitHub Repo</a>
-      </div>
-    </div>
+  <section class="hero">
+    <h2>AI-Powered Solutions | MLOps | Data Analytics</h2>
+    <p>Hi, I’m Oluwafemi — an AI Specialist & MLOps Engineer helping businesses automate and scale insights.</p>
+    <a href="projects.html" class="cta">See My Work</a>
   </section>
 
   <footer>
@@ -54,9 +31,13 @@
   </footer>
 
   <script>
-    document.getElementById('menu-toggle').onclick = function () {
-      document.getElementById('nav-links').classList.toggle('show');
-    };
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   </script>
+
 </body>
 </html>
