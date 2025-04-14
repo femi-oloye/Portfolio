@@ -25,6 +25,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 nav h1 {
@@ -56,35 +57,80 @@ nav a:hover {
   transition: color 0.3s ease;
 }
 
-/* Hero section */
-.hero, .projects, .contact {
-  padding: 2rem;
-  text-align: center;
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #58a6ff;
+  cursor: pointer;
 }
 
+/* Hero, Projects, and Contact sections */
+.hero, .projects, .contact {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contact a {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+.contact a:hover {
+  color: #1f6feb;
+}
+
+/* CTA Button */
 .cta {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background-color: #238636;
   color: white;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #2ea043;
 }
 
 /* Project Cards */
 .project-card {
   background-color: #161b22;
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: 1rem;
   border-radius: 10px;
   max-width: 800px;
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(35, 134, 54, 0.3);
 }
 
 .project-card img {
@@ -92,10 +138,20 @@ nav a:hover {
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
+  background-color: #0d1117;
 }
 
 .project-info {
   margin-top: 1rem;
+}
+
+.project-info h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  line-height: 1.5;
 }
 
 /* Footer */
@@ -106,15 +162,7 @@ footer {
   color: #8b949e;
 }
 
-/* Hamburger Menu */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: #58a6ff;
-  cursor: pointer;
-}
-
-/* Responsive nav */
+/* Responsive Navigation */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -125,12 +173,13 @@ footer {
     background-color: #161b22;
     position: absolute;
     top: 60px;
-    right: 0;
+    right: 1rem;
     width: 200px;
     display: none;
     padding: 1rem;
     border-radius: 0 0 0 10px;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }
 
   nav ul.show {
@@ -142,7 +191,7 @@ footer {
   }
 }
 
-
+/* Fade-in animation */
 @keyframes fadeIn {
   to {
     opacity: 1;
