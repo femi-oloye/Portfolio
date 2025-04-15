@@ -3,7 +3,7 @@
 Welcome to my personal portfolio showcasing my work as a Prompt Engineering Specialist, AI Engineer, and MLOps Engineer. This site highlights real-world, AI-powered projects built to automate insights, scale analytics, and transform business workflows.
 
 ## 🌐 Live Portfolio
-🔗 [Visit Live Site](https://your-username.github.io/your-repo-name)
+🔗 [Visit Live Site](https://femi-oloye.github.io/Portfolio/)
 
 ## 📁 Featured Projects
 
