@@ -1,4 +1,4 @@
-* Base styling */
+/* Base Styling */
 body {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
@@ -41,14 +41,9 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin-left: 1rem;
-}
-
 nav a {
   color: #58a6ff;
   text-decoration: none;
-  position: relative;
 }
 
 nav a:hover {
@@ -56,7 +51,7 @@ nav a:hover {
   transition: color 0.3s ease;
 }
 
-/* Hero section */
+/* Section Styling */
 .hero, .projects, .contact {
   padding: 2rem;
   text-align: center;
@@ -98,7 +93,6 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -106,7 +100,6 @@ footer {
   color: #c9d1d9;
 }
 
-/* Hamburger Menu */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -114,7 +107,7 @@ footer {
   cursor: pointer;
 }
 
-/* Responsive nav */
+/* Responsive Navigation */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -136,13 +129,9 @@ footer {
   nav ul.show {
     display: flex;
   }
-
-  nav ul li {
-    margin: 0.5rem 0;
-  }
 }
 
-
+/* Fade-in Animation */
 @keyframes fadeIn {
   to {
     opacity: 1;
