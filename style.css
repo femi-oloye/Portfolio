@@ -220,3 +220,10 @@ footer {
 .btn:hover {
   background-color: #2ea043;
 }
+
+@media screen and (max-width: 480px) {
+  .project-card {
+    margin: 0 10px;
+  }
+}
+
