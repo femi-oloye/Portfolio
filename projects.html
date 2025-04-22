@@ -2,78 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Oluwafemi Oloye</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
-  <header>
-    <nav>
-      <h1>Oluwafemi Oloye</h1>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <main class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Titanic MLOps API</h3>
+        <p>Logistic regression deployed via FastAPI with Docker & CI/CD.</p>
+        <a href="https://github.com/yourusername/titanic-mlops-api" target="_blank">View on GitHub</a>
+      </div>
 
-  <section id="projects" class="projects-section">
-  <div class="projects-grid">
-    <div class="project-card">
-      <img src="assets/images/streamlit-insight.png" alt="Project Screenshot">
-      <div class="project-content">
-        <h3>AI Insight Generator</h3>
-        <p>AI-powered Streamlit app that analyzes customer messages, tags sentiment, and generates insights from CSV uploads. Built with GPT API and OpenRouter.</p>
-        <div class="tags">
-          <span>Python</span><span>Streamlit</span><span>LLM</span><span>Pandas</span>
-        </div>
-        <a href="https://github.com/femi-oloye/LLM-Powered-Customer-Chat-Insight-Generator.git" class="cta" target="_blank">View on GitHub</a>
+      <div class="project-card">
+        <h3>Customer Chat Insight App</h3>
+        <p>Streamlit app using LLMs to extract insights & sentiments from chats.</p>
+        <a href="https://github.com/yourusername/chat-insight-app" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Telecom KPI Tracker</h3>
+        <p>Real-time telecom analytics with Airflow, Snowflake & Streamlit.</p>
+        <a href="https://github.com/yourusername/telecom-kpi-tracker" target="_blank">View on GitHub</a>
       </div>
     </div>
+  </main>
 
-     <div class="project-card">
-      <img src="assets/images/placeholder.png" alt="Titanic API Project Screenshot" />
-      <div class="project-info">
-        <h3>MLOps Model Monitoring & Drift Detection</h3>
-        <p>An end-to-end MLOps pipeline for model monitoring and drift detection using MLflow, Evidently AI, and Airflow.</p>
-        <a href="https://github.com/yourusername/mlops-titanic-api" class="cta" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/images/placeholder.png" alt="Telecom Tracker Screenshot" />
-      <div class="project-info">
-        <h3>Telecom KPI & Customer Performance Tracking System</h3>
-        <p>Real-time telecom KPI monitoring and customer churn prediction using AI-powered systems.</p>
-        <a href="https://github.com/femi-oloye/Telecom-tracking-kpi.git" class="cta" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-     <div class="project-card">
-      <img src="assets/images/placeholder.png" alt="Campaign Optimization Screenshot" />
-      <div class="project-info">
-        <h3>Customer Segmentation & Email Campaign Optimization</h3>
-        <p>Interactive dashboard with machine learning workflows for email campaign optimization.</p>
-        <a href="https://github.com/femi-oloye/segmentation-email-optimization.git" class="cta" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-
-    <!-- Repeat for other projects -->
-  </div>
-</section>
-
-
-  <footer>
-    <p>&copy; 2025 Oluwafemi Oloye</p>
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById('menu-toggle').onclick = function () {
-      document.getElementById('nav-links').classList.toggle('show');
-    };
-  </script>
 </body>
 </html>
