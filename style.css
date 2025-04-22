@@ -33,6 +33,18 @@ nav h1 {
   color: #c9d1d9;
 }
 
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta:hover {
+  background-color: #2ea043;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
