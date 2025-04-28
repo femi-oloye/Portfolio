@@ -30,76 +30,72 @@
   <footer>
     <p>&copy; 2025 Oluwafemi Oloye</p>
   </footer>
-
-  <script src="product-data.js"></script>
-  <script>
-    function getProductIdFromURL() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get('id');
-    }
-
- function renderProduct(productId) {
-  const product = products[productId];
-  if (!product) {
-    document.getElementById('product-container').innerHTML = "<p>Product not found!</p>";
-    return;
+<script src="product-data.js"></script>
+<script>
+  function getProductIdFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('id');
   }
 
-  const videoEmbed = product.videoId
-    ? `<div class="video-container">
-          <iframe 
-            src="https://www.youtube.com/embed/${product.videoId}" 
-            title="${product.title}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-       </div>`
-    : `<div class="no-video">
-         <p><strong>Video coming soon!</strong></p>
-       </div>`;
-
-  const html = `
-    <div class="product-info">
-      ${videoEmbed}
-      <div class="product-description">
-        <h2>${product.title}</h2>
-
-        <h3>What You Get</h3>
-        <p>${product.description}</p>
-
-        <h3>Features</h3>
-        <ul>
-          ${product.features.map(item => `<li>${item}</li>`).join('')}
-        </ul>
-
-        <h3>How to Use</h3>
-        <p>${product.howToUse}</p>
-
-        ${product.exampleOutput ? `
-          <h3>Example Output</h3>
-          <pre>${product.exampleOutput}</pre>
-        ` : ''}
-
-        <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
-      </div>
-    </div>
-  `;
-
-  document.getElementById('product-container').innerHTML = html;
-}
-
-
-      document.getElementById('product-container').innerHTML = html;
+  function renderProduct(productId) {
+    const product = products[productId];
+    if (!product) {
+      document.getElementById('product-container').innerHTML = "<p>Product not found!</p>";
+      return;
     }
 
-    document.getElementById('menu-toggle').onclick = function () {
-      document.getElementById('nav-links').classList.toggle('show');
-    };
+    const videoEmbed = product.videoId
+      ? `<div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/${product.videoId}" 
+              title="${product.title}" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+         </div>`
+      : `<div class="no-video">
+           <p><strong>Video coming soon!</strong></p>
+         </div>`;
 
-    const productId = getProductIdFromURL();
-    renderProduct(productId);
-  </script>
+    const html = `
+      <div class="product-info">
+        ${videoEmbed}
+        <div class="product-description">
+          <h2>${product.title}</h2>
+
+          <h3>What You Get</h3>
+          <p>${product.description}</p>
+
+          <h3>Features</h3>
+          <ul>
+            ${product.features.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+
+          <h3>How to Use</h3>
+          <p>${product.howToUse}</p>
+
+          ${product.exampleOutput ? `
+            <h3>Example Output</h3>
+            <pre>${product.exampleOutput}</pre>
+          ` : ''}
+
+          <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
+        </div>
+      </div>
+    `;
+
+    document.getElementById('product-container').innerHTML = html;
+  }
+
+  document.getElementById('menu-toggle').onclick = function () {
+    document.getElementById('nav-links').classList.toggle('show');
+  };
+
+  const productId = getProductIdFromURL();
+  renderProduct(productId);
+</script>
+
 
 </body>
 </html>
