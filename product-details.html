@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | Oluwafemi Oloye</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Oluwafemi Oloye</h1>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="product-details" class="product-section">
+    <div class="container" id="product-container">
+      <!-- Dynamic content will be loaded here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Oluwafemi Oloye</p>
+  </footer>
+
+  <script src="product-data.js"></script>
+  <script>
+    function getProductIdFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('id');
+    }
+
+    function renderProduct(productId) {
+      const product = products[productId];
+      if (!product) {
+        document.getElementById('product-container').innerHTML = "<p>Product not found!</p>";
+        return;
+      }
+
+      const html = `
+        <h2>${product.title}</h2>
+        <div class="product-info">
+          <img src="${product.image}" alt="${product.title}">
+          <div class="product-description">
+            <h3>What You Get</h3>
+            <p>${product.description}</p>
+
+            <h3>Features</h3>
+            <ul>
+              ${product.features.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+
+            <h3>How to Use</h3>
+            <p>${product.howToUse}</p>
+
+            <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('product-container').innerHTML = html;
+    }
+
+    document.getElementById('menu-toggle').onclick = function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    };
+
+    const productId = getProductIdFromURL();
+    renderProduct(productId);
+  </script>
+
+</body>
+</html>
