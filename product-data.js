@@ -10,7 +10,8 @@ const products = {
       "Upsell opportunities identification",
       "Bonus: Churn risk tracker tool"
     ],
-    howToUse: "Once purchased, you'll receive an easy-to-use Python script with integrated GPT-powered prompts. Simply plug in your customer feedback data, and the tool will automatically process it.",
+    howToUse: "Welcome! These 10 carefully designed AI prompts will help you analyze customer feedback faster, extract powerful insights, and act smarter.How to use them:Once purchased, Copy a prompt into ChatGPT (or any other AI tool).Replace [Insert Feedback Here] with your real customer feedback, surveys, support tickets, or reviews. Let the AI generate clear insights, sentiment tags, churn risk predictions, and more.Feel free to adjust the prompts slightly to match your data and use case!
+ ",
     gumroadLink: "https://insightloop.gumroad.com/l/dxxcfn?wanted=true"
   },
   "product2": {
