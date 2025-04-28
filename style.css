@@ -332,4 +332,11 @@ footer {
     }
 }
 
+/* Centering container */
+.container {
+  max-width: 1100px; /* or the width that suits your design */
+  margin: 0 auto;
+  padding: 20px;
+}
+
 
