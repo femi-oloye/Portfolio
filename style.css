@@ -144,6 +144,12 @@ footer {
   text-align: center;
 }
 
+.product-section {
+  background-color: #161b22;
+  padding: 60px 20px;
+  text-align: center;
+}
+
 .projects-section h2 {
   color: #fff;
   font-size: 2rem;
