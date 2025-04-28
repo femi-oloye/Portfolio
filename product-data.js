@@ -11,7 +11,8 @@ const products = {
       "Bonus: Churn risk tracker tool"
     ],
     howToUse: "Welcome! These 10 carefully designed AI prompts will help you analyze customer feedback faster, extract powerful insights, and act smarter.How to use them:Once purchased, Copy a prompt into ChatGPT (or any other AI tool).Replace [Insert Feedback Here] with your real customer feedback, surveys, support tickets, or reviews. Let the AI generate clear insights, sentiment tags, churn risk predictions, and more.Feel free to adjust the prompts slightly to match your data and use case!",
-    exampleOutput: `Summarize Feedback & Sentiment Analysis example output:
+    exampleOutput: `Summarize Feedback & Sentiment Analysis 
+    example output:
 Summary by Key Themes
 Theme | Insights
 Product Improvement | Customers suggest improving checkout speed and app stability (crashes). They also request more payment options.
