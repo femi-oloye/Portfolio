@@ -356,3 +356,20 @@ footer {
 .product-description ul li {
   margin-bottom: 10px; /* Space between list items */
 }
+
+.product-info img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.product-section {
+  background-color: #161b22;
+  padding: 60px 20px;
+  text-align: center;
+}
+
