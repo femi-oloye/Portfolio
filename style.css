@@ -374,9 +374,42 @@ footer {
 }
 
 pre {
-  background-color: #f4f4f4;
-  padding: 1em;
-  border-radius: 5px;
+  background-color: #0d1117; /* Dark background */
+  color: #c9d1d9; /* Light text */
+  padding: 1.5em;
+  border-radius: 8px;
   overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  white-space: pre-wrap; /* Important to wrap text nicely */
+  border: 1px solid #30363d;
+  margin-top: 20px;
 }
+
+.product-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 2rem;
+  background-color: #0d1117;
+  padding: 2rem;
+  border: 1px solid #30363d;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .product-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.product-description ul li::before {
+  content: "✅ ";
+  margin-right: 6px;
+}
+
+
 
