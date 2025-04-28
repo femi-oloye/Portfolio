@@ -46,10 +46,13 @@
       }
 
       const html = `
-        <h2>${product.title}</h2>
-        <div class="product-info">
-          <img src="${product.image}" alt="${product.title}">
-          <div class="product-description">
+  <div class="product-info">
+    <div class="product-description">
+      <h2>${product.title}</h2>
+    </div>
+    <img src="${product.image}" alt="${product.title}">
+    <div class="product-description">
+
             <h3>What You Get</h3>
             <p>${product.description}</p>
 
