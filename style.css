@@ -332,15 +332,27 @@ footer {
     }
 }
 
-/* Centering container */
-.container {
-  max-width: 1100px; /* or the width that suits your design */
-  margin: 0 auto;
-  padding: 20px;
+.product-info img {
+  width: 100%;
+  max-width: 600px; /* Limit maximum width */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Center the image */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+/* Center product-description content but align text nicely */
+.product-description {
+  max-width: 700px; /* Keep content readable */
+  margin: 0 auto; /* Center horizontally */
+  text-align: left; /* Make text (and list bullets) aligned properly */
 }
 
-/* Product Section (optional) */
-.product-section {
-  padding: 60px 20px;
-  text-align: center;
+/* Optional: add a little margin to ul */
+.product-description ul {
+  padding-left: 20px; /* Proper left padding for bullets */
+}
+
+.product-description ul li {
+  margin-bottom: 10px; /* Space between list items */
 }
