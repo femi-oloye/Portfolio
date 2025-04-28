@@ -38,47 +38,50 @@
       return params.get('id');
     }
 
-    function renderProduct(productId) {
-      const product = products[productId];
-      if (!product) {
-        document.getElementById('product-container').innerHTML = "<p>Product not found!</p>";
-        return;
-      }
+   function renderProduct(productId) {
+  const product = products[productId];
+  if (!product) {
+    document.getElementById('product-container').innerHTML = "<p>Product not found!</p>";
+    return;
+  }
 
-      const html = `
-        <div class="product-info">
-          <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
-              title="${product.title}" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="product-description">
-            <h2>${product.title}</h2>
+  const html = `
+    <div class="product-info">
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/${product.videoId}" 
+          title="${product.title}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="product-description">
+        <h2>${product.title}</h2>
 
-            <h3>What You Get</h3>
-            <p>${product.description}</p>
+        <h3>What You Get</h3>
+        <p>${product.description}</p>
 
-            <h3>Features</h3>
-            <ul>
-              ${product.features.map(item => `<li>${item}</li>`).join('')}
-            </ul>
+        <h3>Features</h3>
+        <ul>
+          ${product.features.map(item => `<li>${item}</li>`).join('')}
+        </ul>
 
-            <h3>How to Use</h3>
-            <p>${product.howToUse}</p>
+        <h3>How to Use</h3>
+        <p>${product.howToUse}</p>
 
-            ${product.exampleOutput ? `
-              <h3>Example Output</h3>
-              <pre>${product.exampleOutput}</pre>
-            ` : ''}
+        ${product.exampleOutput ? `
+          <h3>Example Output</h3>
+          <pre>${product.exampleOutput}</pre>
+        ` : ''}
 
-            <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
-          </div>
-        </div>
-      `;
+        <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('product-container').innerHTML = html;
+}
 
       document.getElementById('product-container').innerHTML = html;
     }
