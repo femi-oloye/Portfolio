@@ -38,24 +38,30 @@
       return params.get('id');
     }
 
-   function renderProduct(productId) {
+ function renderProduct(productId) {
   const product = products[productId];
   if (!product) {
     document.getElementById('product-container').innerHTML = "<p>Product not found!</p>";
     return;
   }
 
+  const videoEmbed = product.videoId
+    ? `<div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/${product.videoId}" 
+            title="${product.title}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+       </div>`
+    : `<div class="no-video">
+         <p><strong>Video coming soon!</strong></p>
+       </div>`;
+
   const html = `
     <div class="product-info">
-      <div class="video-container">
-        <iframe 
-          src="https://www.youtube.com/embed/${product.videoId}" 
-          title="${product.title}" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
+      ${videoEmbed}
       <div class="product-description">
         <h2>${product.title}</h2>
 
@@ -82,6 +88,7 @@
 
   document.getElementById('product-container').innerHTML = html;
 }
+
 
       document.getElementById('product-container').innerHTML = html;
     }
