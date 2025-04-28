@@ -61,6 +61,11 @@
             <h3>How to Use</h3>
             <p>${product.howToUse}</p>
 
+             ${product.exampleOutput ? `
+          <h3>Example Output</h3>
+          <pre>${product.exampleOutput}</pre>
+        ` : ''}
+
             <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
           </div>
         </div>
