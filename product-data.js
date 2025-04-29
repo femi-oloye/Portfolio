@@ -1,7 +1,7 @@
 const products = {
   "product1": {
     title: "10 AI Prompts for SaaS Customer Insights",
-    videoId: "8ML69RFqXOY", // Example: "dQw4w9WgXcQ"
+    videoId: "8ML69RFqXOY",
     description: "This tool includes a collection of 10 expert-designed AI prompts that help SaaS founders and marketers quickly analyze customer feedback.",
     features: [
       "Fast customer feedback summarization",
@@ -15,7 +15,7 @@ How to use them:
 1. Copy a prompt into ChatGPT (or any other AI tool).
 2. Replace [Insert Feedback Here] with your real customer feedback, surveys, support tickets, or reviews.
 3. Let the AI generate clear insights, sentiment tags, churn risk predictions, and more.
-Feel free to adjust the prompts slightly to match your data and use case!,`
+Feel free to adjust the prompts slightly to match your data and use case!`,
     exampleOutput: `Example:
 Theme | Insights
 Product Improvement | Customers suggest improving checkout speed and app stability.
@@ -24,7 +24,7 @@ Customer Experience | Navigation is praised for being easy and user-friendly.
 Sentiment Analysis Table:
 Message | Sentiment
 "I love the app!" | Positive
-"Checkout is slow." | Negative,`
+"Checkout is slow." | Negative`,
     gumroadLink: "https://insightloop.gumroad.com/l/dxxcfn?wanted=true"
   },
   "product2": {
