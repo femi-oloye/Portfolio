@@ -478,6 +478,22 @@ pre {
   margin-bottom: 20px;
 }
 
+.social-links {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.social-links a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-links a:hover {
+  color: #1f6feb;
+}
+
+
 
 
 
