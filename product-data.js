@@ -1,7 +1,7 @@
 const products = {
   "product1": {
     title: "10 AI Prompts for SaaS Customer Insights",
-    videoId: "YOUR_VIDEO_ID_HERE", // Example: "dQw4w9WgXcQ"
+    videoId: "8ML69RFqXOY", // Example: "dQw4w9WgXcQ"
     description: "This tool includes a collection of 10 expert-designed AI prompts that help SaaS founders and marketers quickly analyze customer feedback.",
     features: [
       "Fast customer feedback summarization",
