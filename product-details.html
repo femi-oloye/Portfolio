@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +46,7 @@
     }
 
     const videoEmbed = product.videoId
-      ? `<div class="video-container">
+      ? <div class="video-container">
             <iframe 
               src="https://www.youtube.com/embed/${product.videoId}" 
               title="${product.title}" 
@@ -53,12 +54,12 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
             </iframe>
-         </div>`
-      : `<div class="no-video">
+         </div>
+      : <div class="no-video">
            <p><strong>Video coming soon!</strong></p>
-         </div>`;
+         </div>;
 
-    const html = `
+    const html = 
       <div class="product-info">
         ${videoEmbed}
         <div class="product-description">
@@ -69,21 +70,21 @@
 
           <h3>Features</h3>
           <ul>
-            ${product.features.map(item => `<li>${item}</li>`).join('')}
+            ${product.features.map(item => <li>${item}</li>).join('')}
           </ul>
 
           <h3>How to Use</h3>
           <p>${product.howToUse}</p>
 
-          ${product.exampleOutput ? `
+          ${product.exampleOutput ? 
             <h3>Example Output</h3>
             <pre>${product.exampleOutput}</pre>
-          ` : ''}
+           : ''}
 
           <a href="${product.gumroadLink}" target="_blank" class="btn">Buy Now</a>
         </div>
       </div>
-    `;
+    ;
 
     document.getElementById('product-container').innerHTML = html;
   }
