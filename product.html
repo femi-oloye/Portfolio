@@ -2,57 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Oluwafemi Oloye</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <nav>
-      <h1>My Portfolio</h1>
-      <span class="menu-toggle">&#9776;</span>
-      <ul>
+      <h1>Oluwafemi Oloye</h1>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="product.html">Products</a></li>
+         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="product-section">
-    <h2>My Products</h2>
-    <p>Here are some of the tools and products I've built.</p>
-    <div class="products-grid">
-      <!-- Example product card -->
-      <div class="product-card">
-        <img src="product1.jpg" alt="Product Image">
-        <div class="product-content">
-          <h3>Product One</h3>
-          <p>This is a description of Product One.</p>
-          <div class="tags">
-            <span>Tool</span><span>Utility</span>
-          </div>
-          <a class="btn" href="#">Learn More</a>
+<section id="projects" class="projects-section">
+  <h2>Product</h2>
+    <p>Explore our range of AI-powered tools designed to boost your workflow and productivity. Choose the best solution for you!</p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="assets/images/cover-image-website.png" alt="Project Screenshot">
+      <div class="project-content">
+        <h3>10 AI Prompts for SaaS Customer Insights (+ Bonus Churn Risk Tracker!)</h3>
+        <p>Speed up your customer feedback analysis with these expert-designed GPT prompts for SaaS founders, marketing, and support teams. Summarize faster, 
+          tag sentiment, detect churn risk, and uncover upsell opportunities — all without wasting hours reading endless feedback..</p>
+        <div class="tags">
+          <span>ChatGPT 4o</span>
         </div>
+        <a href="https://insightloop.gumroad.com/l/dxxcfn?wanted=true" target="_blank" class="btn">Buy Now</a>
+        <a href="product-details.html?id=product1" target="_blank" class="btn" style="background-color: #1f6feb;" >Learn More</a>
       </div>
-      <!-- Add more product cards as needed -->
     </div>
-  </section>
+
+   
+    
+    <!-- Repeat for other projects -->
+  </div>
+</section>
+
+
+</section>
+
 
   <footer>
-    <p>&copy; 2025 My Portfolio</p>
-    <div class="social-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
-      <a href="mailto:youremail@example.com">Email</a>
-    </div>
+    <p>&copy; 2025 Oluwafemi Oloye</p>
   </footer>
 
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('nav ul');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    document.getElementById('menu-toggle').onclick = function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    };
   </script>
 </body>
-</html>
