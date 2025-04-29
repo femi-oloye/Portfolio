@@ -15,8 +15,8 @@ How to use them:
 1. Copy a prompt into ChatGPT (or any other AI tool).
 2. Replace [Insert Feedback Here] with your real customer feedback, surveys, support tickets, or reviews.
 3. Let the AI generate clear insights, sentiment tags, churn risk predictions, and more.
-Feel free to adjust the prompts slightly to match your data and use case!,
-    exampleOutput: Example:
+Feel free to adjust the prompts slightly to match your data and use case!,`
+    exampleOutput: `Example:
 Theme | Insights
 Product Improvement | Customers suggest improving checkout speed and app stability.
 Customer Experience | Navigation is praised for being easy and user-friendly.
