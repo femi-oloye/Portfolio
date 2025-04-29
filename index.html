@@ -2,44 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oloye Oluwafemi | AI & MLOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <nav>
-      <h1>Oluwafemi Oloye</h1>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      <ul id="nav-links">
+      <h1>My Portfolio</h1>
+      <span class="menu-toggle">&#9776;</span>
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-         <li><a href="product.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-<section class="hero">
-    <h2>AI Insight & Automation Strategist</h2>
-    <p>GPT Dashboards • Customer Intelligence • Prompt Engineering • Streamlit • Python • Looker • Remote-First</p>
-    <p>Hi, I’m Oluwafemi — I build AI-powered solutions that automate insights and drive decision-making. Check out my AI Prompt Engineering Workflow Product to streamline your workflows.</p>
-    <a href="product.html" class="cta">Learn About My Product</a>
-    <a href="projects.html" class="cta">See My Work</a>
-</section>
-
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Explore my projects and products below.</p>
+    <a href="projects.html" class="cta">View Projects</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Oluwafemi Oloye</p>
+    <p>&copy; 2025 My Portfolio</p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+      <a href="mailto:youremail@example.com">Email</a>
+    </div>
   </footer>
 
   <script>
-    const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
   </script>
 </body>
 </html>
