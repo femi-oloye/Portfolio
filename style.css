@@ -499,6 +499,22 @@ pre {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* === PROJECT.HTML: 1 card per row on narrow screens === */
+@media screen and (max-width: 600px) {
+  .projects-section .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* === INDEX.HTML: confine paragraph width and center text === */
+.index-page p {
+  max-width: 800px;       /* or whatever width feels best */
+  margin: 0 auto;         /* center the block */
+  text-align: center;     /* ensure the text is centered */
+  word-wrap: break-word;  /* prevent overflow */
+}
+
+
 
 
 
