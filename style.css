@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 /* Section Styling */
-.hero, .projects, .contact {
+.hero, .projects, .contact, .intro {
   padding: 2rem;
   text-align: center;
 }
