@@ -510,7 +510,7 @@ pre {
 /* === INDEX.HTML: confine paragraph width and center text === */
 .index-page p {
   max-width: 800px;       /* or whatever width feels best */
-  margin: 10 auto;         /* center the block */
+  margin: 0 auto;         /* center the block */
   text-align: center;     /* ensure the text is centered */
   word-wrap: break-word;  /* prevent overflow */
 }
