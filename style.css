@@ -228,9 +228,27 @@ footer {
   transition: background 0.3s ease;
 }
 
+.btn2 {
+  display: inline-block;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 40px;
+
+  background-color: #238636;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+
 .btn:hover {
   background-color: #2ea043;
 }
+.btn2:hover {
+  background-color: #2ea043;
+}
+
 
 @media screen and (max-width: 480px) {
   .project-card {
