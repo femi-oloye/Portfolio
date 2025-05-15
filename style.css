@@ -488,6 +488,19 @@ pre {
 }
 
 
+/* === INDEX.HTML: center all paragraphs on home page === */
+.index-page p {
+  text-align: center;
+}
+
+/* === PROJECT.HTML: force exactly 3 cards per row === */
+.projects-section .projects-grid {
+  /* override the auto-fit behavior */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
 
 
 
