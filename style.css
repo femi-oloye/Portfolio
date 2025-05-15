@@ -230,9 +230,7 @@ footer {
 
 .btn2 {
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 60px;
+  padding: 10px 20px;
   background-color: #238636;
   color: white;
   border-radius: 8px;
