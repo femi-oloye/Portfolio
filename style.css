@@ -321,8 +321,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    .product-card {
+    .projects-section, .projects-grid, .product-card {
         margin: 0 10px;
+        grid-template-columns: 1fr !important;
     }
 }
 
