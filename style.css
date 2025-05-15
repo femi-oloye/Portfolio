@@ -228,21 +228,8 @@ footer {
   transition: background 0.3s ease;
 }
 
-.btn2 {
-  display: inline-block;
-  padding: 20px 20px;
-  background-color: #238636;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
 
 .btn:hover {
-  background-color: #2ea043;
-}
-.btn2:hover {
   background-color: #2ea043;
 }
 
