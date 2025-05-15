@@ -228,24 +228,9 @@ footer {
   transition: background 0.3s ease;
 }
 
-.btn2 {
-  display: inline-block;
-  padding: 0px 20px;
-  margin-top: 30px;
-  background-color: #238636;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
 
 
 .btn:hover {
-  background-color: #2ea043;
-}
-
-
-.btn2:hover {
   background-color: #2ea043;
 }
 
@@ -333,20 +318,6 @@ footer {
     border-radius: 20px;
     font-size: 0.8rem;
     color: #8b949e;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #238636;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #2ea043;
 }
 
 @media screen and (max-width: 480px) {
