@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161b22"/><stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <g stroke="#21262d" stroke-width="1">
+    <path d="M0 90H800M0 180H800M0 270H800M200 0V360M400 0V360M600 0V360"/>
+  </g>
+  <g fill="none" stroke="#3fb950" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="560" cy="120" r="40"/><circle cx="660" cy="90" r="28" stroke="#58a6ff"/><circle cx="680" cy="180" r="34" stroke="#d29922"/></g>
+  <text x="48" y="74" font-family="Arial, sans-serif" font-size="18" letter-spacing="3" fill="#3fb950">ML · EMAIL MARKETING</text>
+  <text x="48" y="270" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#e6edf3">Customer Segmentation</text>
+  <text x="48" y="316" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#e6edf3">&amp; Email Optimization</text>
+</svg>

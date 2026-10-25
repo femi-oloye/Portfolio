@@ -7,14 +7,19 @@ Welcome to my personal portfolio showcasing my work as a Prompt Engineering Spec
 
 ## 📁 Featured Projects
 
-### 1. AI Customer Insight Generator 🧠
-Streamlit app using LLMs to extract insights from customer messages, with multilingual support and sentiment analysis.
+### 1. Financial Anomaly Detection Dashboard 💰
+Rule-based engine and Streamlit dashboard that flags failed-but-debited, duplicate, mismatched and suspicious transactions, and reports revenue at risk.
 
-### 2. Titanic MLOps API 🚢
-A production-grade machine learning API with CI/CD and Dockerized deployment using FastAPI and Scikit-learn.
+### 2. Document QA Bot (LangChain + RAG) 📄
+Ask questions about any uploaded PDF and get answers grounded in the document, using FAISS vector search and OpenAI.
 
-### 3. Telecom KPI Tracker 📶
-Automated reporting dashboard and tracking system using Python, SQL, and Streamlit to monitor customer and network performance.
+### 3. KPI Insight Companion for SaaS 📊
+AI agent that answers plain-English questions about SaaS KPIs with a chart and an explanation.
+
+### 4. Telecom KPI Tracker 📶
+Automated ingestion, churn prediction and KPI dashboards using Python, SQL, Snowflake, Airflow and MLflow.
+
+See the [Projects page](https://femi-oloye.github.io/Portfolio/projects.html) for all projects.
 
 ## 📬 Contact
 Reach out to me via the [Contact page](contact.html) or connect on [LinkedIn](https://www.linkedin.com/in/oluwafemi-oloye-a3b772353/).
@@ -31,5 +36,7 @@ Reach out to me via the [Contact page](contact.html) or connect on [LinkedIn](ht
 ## 🔧 Run Locally
 
 ```bash
-git clone https://github.com/your-username/your-repo-name
-cd your-repo-name
+git clone https://github.com/femi-oloye/Portfolio.git
+cd Portfolio
+# open index.html in your browser
+```

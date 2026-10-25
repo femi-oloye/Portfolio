@@ -26,18 +26,5 @@ Message | Sentiment
 "I love the app!" | Positive
 "Checkout is slow." | Negative`,
     gumroadLink: "https://insightloop.gumroad.com/l/dxxcfn?wanted=true"
-  },
-  "product2": {
-    title: "Another Product Title",
-    // No videoId, will show fallback
-    description: "Short description of the second product.",
-    features: [
-      "Feature one",
-      "Feature two",
-      "Feature three"
-    ],
-    howToUse: "Instructions for second product.",
-    exampleOutput: "",
-    gumroadLink: "https://yourgumroadlink2"
   }
 };
